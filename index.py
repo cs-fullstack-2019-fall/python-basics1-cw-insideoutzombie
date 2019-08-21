@@ -30,4 +30,15 @@
 #     print("Incorrect")
 
 ### Problem 4:
-#Ask for two card numbers. If it equals 21 print BLACKJACK!, if it’s greater than 21 print BUST!, if it’s less than 21 print “The total is [THE TOTAL]”
+# Ask for two card numbers.
+# If it equals 21 print BLACKJACK!, if it’s greater than 21 print BUST!,
+# if it’s less than 21 print “The total is [THE TOTAL]”
+userCard = int(input("Enter a card numb "))
+userCard2 = int(input("Enter a 2nd card numb "))
+sum = userCard + userCard2
+if(sum==21):
+    print("BLACKJACK!")
+elif(sum > 21):
+    print("BUST")
+else:
+    print("The total is: ", sum)
